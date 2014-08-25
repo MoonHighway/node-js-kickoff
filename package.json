@@ -1,0 +1,35 @@
+{
+  "name": "node-js-intro",
+  "version": "0.0.0",
+  "description": "A series of topics and examples designed to introduce developers to node js",
+  "main": "GruntFile.js",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-bump": "^0.0.15"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bump": "0.0.15",
+    "grunt-contrib-jshint": "^0.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MoonTahoe/node-js-intro.git"
+  },
+  "keywords": [
+    "Node",
+    "js",
+    "intro",
+    "tutorial"
+  ],
+  "author": "Moon Highway (Alex Banks)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MoonTahoe/node-js-intro/issues"
+  },
+  "homepage": "https://github.com/MoonTahoe/node-js-intro"
+}
