@@ -18,8 +18,12 @@ var req = http.request(options, function(res) {
 
     res.setEncoding('utf8');
 
+    res.once('data', function(chunk) {
+       console.log(chunk);
+    });
+
     res.on('data', function (chunk) {
-        console.log(chunk);
+        console.log("--chunk--" + chunk.length);
         responseBody += chunk;
     });
 

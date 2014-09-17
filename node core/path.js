@@ -9,7 +9,7 @@ url = path.join('courses', 'class', 'javascript', 'students');
 
 console.log(url);
 
-url += "\\studentList.html";
+url += "/studentList.html";
 
 console.log(url);
 

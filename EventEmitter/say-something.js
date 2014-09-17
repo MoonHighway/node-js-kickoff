@@ -7,7 +7,7 @@ var Person = function (name, sayings) {
     p.name = name;
     p.sayings = sayings;
 
-    setInterval(function() {
+    setInterval(function () {
         p.emit('speak', p.saySomething());
     }, 750);
 
@@ -29,10 +29,13 @@ var Leroy = new Person("Leroy Brown", [
     "Who is King Kong anyways"
 ]);
 
+Leroy.once('speak', function (say) {
+    console.log("Leroy Brown won't shut up!");
+});
 
 Leroy.on('speak', function (say) {
     console.log("Say mannnn, " + say);
 });
 
-console.log("Leroy Brown won't shut up!");
+
 

@@ -8,7 +8,7 @@ function getArgument(name) {
  *
  */
 if (process.argv.length > 2) {
-    console.log("INFO: " + getArgument('info'));
+    console.log("INFO: " + getArgument('-info'));
 } else {
     console.log("This process ran without arguments");
 }
