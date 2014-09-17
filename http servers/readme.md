@@ -1,6 +1,5 @@
 http.Server
 ===========
-[Presentation (6, 7)](https://docs.google.com/a/moonhighway.com/presentation/d/1BC3CrRWqiKvDYXU6y2_cVegLdZ9WMkYAXdR2OaJNIcI/edit#slide=id.g33becb33d_00)
 One of the most powerful features of Node js is the ability to create http servers.  You can program one file... in javascript...
 that can act as a webserver on any machine running Node js.  Servers are a part of the http module that comes with Node js.
 

@@ -1,6 +1,5 @@
 npm optimist module
 ===================
-[Presentation (5)](https://docs.google.com/a/moonhighway.com/presentation/d/1BC3CrRWqiKvDYXU6y2_cVegLdZ9WMkYAXdR2OaJNIcI/edit#slide=id.g33becb33d_00)
 A node modules that takes terminal arguments and places them on a hash.
 
 Installing Optimist

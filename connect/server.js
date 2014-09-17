@@ -6,7 +6,10 @@ var connect = require('connect'),
  * @type {Server}
  */
 var app = connect()
-    .use(connect.logger('dev'))
+    .use(function(req, res, next) {
+        console.log("Request Made For: " + req.url);
+        next();
+    })
     .use(connect.static('public'));
 
 http.createServer(app).listen(3000);

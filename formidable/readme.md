@@ -1,6 +1,5 @@
 npm formidable module
 =====================
-[Presentation (10)](https://docs.google.com/a/moonhighway.com/presentation/d/1BC3CrRWqiKvDYXU6y2_cVegLdZ9WMkYAXdR2OaJNIcI/edit#slide=id.g33becb33d_00)
 Formidable is a node module that can speed up your workflow by parsing your post data and injecting the form variables
 and uploaded files neatly into a callback function.
 

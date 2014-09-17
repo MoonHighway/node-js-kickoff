@@ -1,6 +1,5 @@
 npm connect
 ===========
-[Presentation (8)](https://docs.google.com/a/moonhighway.com/presentation/d/1BC3CrRWqiKvDYXU6y2_cVegLdZ9WMkYAXdR2OaJNIcI/edit#slide=id.g33becb33d_00)
 Connect is a server module that we can use to help speed up web development. Connect is great for serving static files.
 Later on we will review the Express modules which is built on connect and provides many more features.
 
@@ -9,7 +8,8 @@ Installing Connect
 [connect](https://www.npmjs.org/package/connect)
 
 ```
-    $ npm install connect
+    $ npm view connect versions
+    $ npm install connect@2.25.0
 ```
 
 Creating a connect app
@@ -20,7 +20,10 @@ Creating a connect app
         http = require('http');
 
     var app = connect()
-        .use(connect.logger('dev'))
+        .use(function(req, res, next) {
+                console.log("Request Made For: " + req.url);
+                next();
+         })
         .use(connect.static('public'));
 
     http.createServer(app).listen(3000);

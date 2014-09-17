@@ -1,6 +1,5 @@
 Unit Testing
 ============
-[Presentation (2)](https://docs.google.com/a/moonhighway.com/presentation/d/1BC3CrRWqiKvDYXU6y2_cVegLdZ9WMkYAXdR2OaJNIcI/edit#slide=id.g33becb33d_00)
 There are many options when it comes to unit testing. There are frameworks that support both TDD and BDD.  Even though
 each testing framework is different, they all do the same thing.  You create tests, write assertions, and run tests.
 

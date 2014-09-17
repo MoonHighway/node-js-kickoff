@@ -1,6 +1,5 @@
 parsing post bodies
 ===================
-[Presentation (10)](https://docs.google.com/a/moonhighway.com/presentation/d/1BC3CrRWqiKvDYXU6y2_cVegLdZ9WMkYAXdR2OaJNIcI/edit#slide=id.g33becb33d_00)
 Whenever form data is sent to the post data needs to be collected from the request in chunks.  Once we have the post data
 we have to parse it. That could get ugly, so we will use one of many parsing frameworks after this example.
 

@@ -1,6 +1,5 @@
 Node Package Manager NPM
 ========================
-[Presentation (3,4)](https://docs.google.com/a/moonhighway.com/presentation/d/1BC3CrRWqiKvDYXU6y2_cVegLdZ9WMkYAXdR2OaJNIcI/edit#slide=id.g33becb33d_00)
 The Node Package manager is where we get modules from the node js community.  Node modules hosted at github can
 be registered here as well.  Once we find a module that we like, all we need is it's name.
 [npmjs.org](https://www.npmjs.org/)
