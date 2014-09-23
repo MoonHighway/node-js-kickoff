@@ -6,11 +6,16 @@ exports.printName = function (person) {
 
 
 exports.webResuest = function (url, callback) {
-    http.get(url, function (err, data) {
-        if (err) {
-            throw err;
-        } else {
-            callback(data);
-        }
+    http.get(url, function (res) {
+        var body = '';
+
+        res.on('data', function (chunk) {
+            body += chunk;
+        });
+
+        res.on('end', function () {
+            callback(body);
+        });
+
     });
 };
