@@ -1,8 +1,8 @@
-var connect = require('connect'),
-    http = require('http');
+var connect = require('connect');
 
 /**
- * Website that serves static files form the public and logs request to teh console
+ * npm install connect@2.25.0
+ * Website that serves static files form the public and logs request to the console
  * @type {Server}
  */
 var app = connect()
@@ -12,6 +12,6 @@ var app = connect()
     })
     .use(connect.static('public'));
 
-http.createServer(app).listen(3000);
+app.listen(3000);
 
-console.log("Files being served on " + (3000));
+console.log("Files being served on 3000");
