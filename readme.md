@@ -41,7 +41,7 @@ Agenda
 
 Download the Files
 ------------------
-The files for this course are found on github at [https://github.com/MoonTahoe/D3-intro](https://github.com/MoonTahoe/node-js-intro).
+The files for this course are found on github at [https://github.com/MoonTahoe/node-js-intro](https://github.com/MoonTahoe/node-js-intro).
 
     $ git clone https://github.com/MoonHighway/node-js-intro.git
     
