@@ -14,8 +14,6 @@ describe('myModule', function() {
           lastName: 'Brown'
         };
 
-        person.should.be.instanceOf(Object).and.have.property('firstName', 'Leroy');
-
         var result = module.printName(person);
 
         result.should.equal(person.lastName + ", " + person.firstName);

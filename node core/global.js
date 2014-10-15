@@ -12,4 +12,3 @@ console.log(global);
 
 console.log("=======================================================");
 
-console.log(process.env.OS);
