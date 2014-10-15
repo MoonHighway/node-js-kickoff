@@ -5,7 +5,7 @@ exports.printName = function (person) {
 };
 
 
-exports.webResuest = function (url, callback) {
+exports.webRequest = function (url, callback) {
     http.get(url, function (res) {
         var body = '';
 

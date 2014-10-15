@@ -21,7 +21,7 @@ describe('myModule', function() {
 
     it('should webrequest', function(done) {
 
-        module.webResuest('http://www.moonhighway.com', function(data) {
+        module.webRequest('http://www.moonhighway.com', function(data) {
             data.should.be.ok;
             data.length.should.be.above(0);
             done();
