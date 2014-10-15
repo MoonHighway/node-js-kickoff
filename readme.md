@@ -1,20 +1,52 @@
 Introduction to Node js
 =======================
-This set of files can be used to introduce developers to node js. These files consist of a series of small node js 
-samples that examine how node js works.
+This course introduces Javascript Engineers to Node js, or Javascript on the server.  This course covers how node works,
+when to use it, and how to use it. In this introduction we will look mostly at the core components of node js that
+were developed by Joyent.  This course wraps with introducing NPM, the NPM registry, and some commonly used 
+node modules.
 
-Topics
+Goals
+-----
+* Understand how node js works, what makes it so fast
+* Install various versions of Node js
+* Create and run node js applications and libraries
+* Know where to find node modules
+* Understand how to use NPM
+* Understand connect and middleware
+* Learn how to Test our code with mocha and chai
+
+Expectations
+------------
+* Proficiency with Javascript Object Literals, Arrays, and Functions
+* Basic understanding of HTML, CSS, and the Browser
+
+Agenda
 ------
-1. [intro](https://github.com/MoonTahoe/node-js-intro/tree/master/Intro)
-2. [node core](https://github.com/MoonTahoe/node-js-intro/tree/master/node%20core)
-3. [EventEmitter](https://github.com/MoonTahoe/node-js-intro/tree/master/EventEmitter)
-4. [modules](https://github.com/MoonTahoe/node-js-intro/tree/master/modules)
-5. [fs](https://github.com/MoonTahoe/node-js-intro/tree/master/fs)
-6. [parsing post bodies](https://github.com/MoonTahoe/node-js-intro/tree/master/parsing%20post%20bodies)
-7. [request](https://github.com/MoonTahoe/node-js-intro/tree/master/request)
-8. [http-servers](https://github.com/MoonTahoe/node-js-intro/tree/master/http-servers)
-9. [npm](https://github.com/MoonTahoe/node-js-intro/tree/master/npm)
-10. [optimist](https://github.com/MoonTahoe/node-js-intro/tree/master/optimist)
-11. [formidable](https://github.com/MoonTahoe/node-js-intro/tree/master/formidable)
-12. [connect](https://github.com/MoonTahoe/node-js-intro/tree/master/connect)
-13. [mocha](https://github.com/MoonTahoe/node-js-intro/tree/master/mocha)
+
+### Day 1
+* What is Node js, How does it work
+* Node js global object
+* requiring modules, Path, Util
+* Understanding EventEmitter
+* Using your own Node Modules
+* Working with the file system
+* Making Requests
+* Building web servers with HTTP
+* Posting Form data and uploading files
+* Node Package Manager and the NPM Registry
+* Using Optimist
+* Using formidable
+* Creating a connect site
+* Testing with Mocha and Chai
+
+Download the Files
+------------------
+The files for this course are found on github at [https://github.com/MoonTahoe/D3-intro](https://github.com/MoonTahoe/node-js-intro).
+
+    $ git clone https://github.com/MoonHighway/node-js-intro.git
+    
+Requirements
+------------
+* Preferred IDE (Sublime, Atom, Webstorm)
+* Google Chrome Browser
+* Git installed
