@@ -1,6 +1,6 @@
 {
   "name": "node-js-intro",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A series of topics and examples designed to introduce developers to node js",
   "main": "GruntFile.js",
   "dependencies": {
