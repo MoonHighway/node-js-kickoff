@@ -13,6 +13,6 @@ url += "/studentList.html";
 
 console.log(url);
 
-url = path.basename(url);
+url = path.basename(__filename);
 
 console.log(url);

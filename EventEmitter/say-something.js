@@ -1,4 +1,5 @@
-var EventEmitter = require('events').EventEmitter;
+var EventEmitter = require('events').EventEmitter,
+    util = require('util');
 
 var Person = function (name, sayings) {
 
@@ -13,10 +14,12 @@ var Person = function (name, sayings) {
 
 };
 
-Person.prototype = new EventEmitter();
+util.inherits(Person, EventEmitter);
+
 Person.prototype.saySomething = function () {
     return this.sayings[Math.floor(Math.random() * this.sayings.length)];
 };
+
 
 
 var Leroy = new Person("Leroy Brown", [
