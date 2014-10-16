@@ -24,7 +24,7 @@ module.exports = function (grunt) {
                 tagName: 'v%VERSION%',
                 tagMessage: 'Version %VERSION%',
                 push: true,
-                pushTo: 'https://github.com/MoonTahoe/node-js-intro.git',
+                pushTo: 'https://github.com/MoonHighway/node-js-intro.git',
                 gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d'
             }
         }
