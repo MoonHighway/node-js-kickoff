@@ -1,6 +1,6 @@
 var module = require('../myModule'),
-    http = require('http'),
-    should = require('should');
+    should = require('should'),
+    cheerio = require('cheerio');
 
 
 describe('myModule', function() {
@@ -23,11 +23,21 @@ describe('myModule', function() {
 
         module.webRequest('http://www.moonhighway.com', function(data) {
             data.should.be.ok;
-            data.length.should.be.above(0);
             done();
         });
 
     });
 
+    it('should load moonhighway\'s address', function(done) {
+
+        module.webRequest('http://www.moonhighway.com', function(data) {
+
+            var $ = cheerio.load(data);
+            $('p.Address2').text().should.equal('Tahoe City, CA 96145');
+            done();
+
+        });
+
+    });
 
 });

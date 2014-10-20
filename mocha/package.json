@@ -1,0 +1,19 @@
+{
+  "name": "mocha-testing",
+  "version": "0.0.1",
+  "description": "A simple mocha test for learning",
+  "main": "myModule.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Alex Banks",
+  "license": "MIT",
+  "devDependencies": {
+    "cheerio": "^0.17.0",
+    "mocha": "^1.21.5",
+    "should": "^4.1.0"
+  }
+}

@@ -51,26 +51,47 @@ or
     $ npm install --save-dev should
 ```
 
+Installing Cheerio
+-----------------
+Cheerio is a DOM parser that works a lot like a lightweight version of jQuery.
+
+```
+    $ npm install cheerio
+```
+
+or
+
+```
+    $ npm install --save-dev cheerio
+```
+
 Writing myModule
 ----------------
 
 ```javascript
+    
     var http = require('http');
-
+    
     exports.printName = function (person) {
         return person.lastName + ", " + person.firstName;
     };
-
-
-    exports.webResuest = function (url, callback) {
-        http.get(url, function (err, data) {
-            if (err) {
-                throw err;
-            } else {
-                callback(data);
-            }
+    
+    
+    exports.webRequest = function (url, callback) {
+        http.get(url, function (res) {
+            var body = '';
+    
+            res.on('data', function (chunk) {
+                body += chunk;
+            });
+    
+            res.on('end', function () {
+                callback(body);
+            });
+    
         });
     };
+
 ```
 
 writing the test
@@ -79,8 +100,8 @@ writing the test
 ```javascript
     
     var module = require('../myModule'),
-        http = require('http'),
-        should = require('should');
+        should = require('should'),
+        cheerio = require('cheerio');
     
     
     describe('myModule', function() {
@@ -93,7 +114,7 @@ writing the test
               firstName: 'Leroy',
               lastName: 'Brown'
             };
-        
+    
             var result = module.printName(person);
     
             result.should.equal(person.lastName + ", " + person.firstName);
@@ -101,16 +122,27 @@ writing the test
     
         it('should webrequest', function(done) {
     
-            module.webResuest('http://www.moonhighway.com', function(data) {
+            module.webRequest('http://www.moonhighway.com', function(data) {
                 data.should.be.ok;
-                data.length.should.be.above(0);
                 done();
             });
     
         });
     
+        it('should load moonhighway\'s address', function(done) {
+    
+            module.webRequest('http://www.moonhighway.com', function(data) {
+    
+                var $ = cheerio.load(data);
+                $('p.Address2').text().should.equal('Tahoe City, CA 96145');
+                done();
+    
+            });
+    
+        });
     
     });
+
 
     
 ```
