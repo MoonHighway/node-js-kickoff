@@ -31,11 +31,9 @@ describe('myModule', function() {
     it('should load moonhighway\'s address', function(done) {
 
         module.webRequest('http://www.moonhighway.com', function(data) {
-
             var $ = cheerio.load(data);
-            $('p.Address2').text().should.equal('Tahoe City, CA 96145');
+            $('h1.brand-heading').text().should.equal('Web Development Training');
             done();
-
         });
 
     });
