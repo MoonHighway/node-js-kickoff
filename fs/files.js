@@ -9,21 +9,23 @@ process.stdin.on('data', function(data) {
 
         case "create" :
 
-            fs.writeFile(fileName, "A New Text File\n===================\n\r\n\r", function(err) {
-                if (err) {
-                    throw err;
-                }
-
-                console.log("File Created");
-
-            });
+            fs.writeFileSync(fileName, "A New Text File\n===================\n\r\n\r");
+            console.log("File Created");
 
             break;
 
         case "append" :
 
-            fs.appendFileSync(fileName, "* Item Appended\n\r");
-            console.log("File Appended");
+            fs.appendFile(fileName, "* Item Appended\n\r", function(err) {
+
+                if (err) {
+                    throw err;
+                }
+
+                console.log("File Appended");
+
+            });
+
 
             break;
 
