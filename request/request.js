@@ -2,9 +2,9 @@ var http = require('http'),
     fs = require('fs');
 
 var options = {
-    hostname: 'en.wikipedia.org',
+    hostname: 'topics.nytimes.com',
     port: 80,
-    path: '/wiki/Mchammer',
+    path: '/top/reference/timestopics/subjects/a/avalanches/index.html',
     method: 'GET'
 };
 
@@ -28,11 +28,12 @@ var req = http.request(options, function(res) {
     });
 
     res.on('end', function() {
-
-        fs.appendFileSync('mc-hammer.html', responseBody);
-
-        console.log("Response from the server done.");
-
+        fs.writeFile('avi-article.html', responseBody, function(err) {
+            if (err) {
+                throw err;
+            }
+            console.log("File Downloaded");
+        });
     });
 });
 
