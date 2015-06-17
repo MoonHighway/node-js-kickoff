@@ -8,7 +8,9 @@ var students = {
 
 };
 
-fs.mkdirSync(__dirname + '/students');
+if (!fs.existsSync(__dirname + "/students")) {
+    fs.mkdirSync("./students");
+}
 
 fs.appendFile('students/index.json', JSON.stringify(students), function(err) {
 
