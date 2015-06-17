@@ -2,23 +2,24 @@ var http = require('http'),
     fs = require('fs');
 
 var options = {
-    hostname: 'en.wikipedia.org',
+    hostname: 'topics.nytimes.com',
     port: 80,
-    path: '/wiki/Mchammer',
+    path: '/top/reference/timestopics/subjects/a/avalanches/index.html',
     method: 'GET'
 };
 
 var req = http.request(options, function(res) {
 
     res.on('data', function (chunk) {
-        fs.appendFileSync('mc-hammer.html', chunk);
+        fs.appendFile('avi-binary.html.download', chunk);
     });
 
     res.on('end', function () {
-        console.log("Hammer Time!");
+        fs.rename('avi-binary.html.download', 'avi-binary.html');
     });
 
 });
+
 
 req.on('error', function(e) {
     console.log('problem with request: ' + e.message);
