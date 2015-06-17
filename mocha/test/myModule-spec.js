@@ -28,11 +28,11 @@ describe('myModule', function() {
 
     });
 
-    it('should load moonhighway\'s address', function(done) {
+    it('should load correct page title', function(done) {
 
         module.webRequest('http://www.moonhighway.com', function(data) {
             var $ = cheerio.load(data);
-            $('h1.brand-heading').text().should.equal('Web Development Training');
+            $('title').text().should.equal('Moon Highway | Web Development Training');
             done();
         });
 
