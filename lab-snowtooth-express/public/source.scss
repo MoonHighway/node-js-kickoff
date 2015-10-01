@@ -1,0 +1,166 @@
+@import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
+
+$font-logo: "Architects Daughter", cursive, sans-serif;
+$dark: black;
+$light-bg-a: #f1f7f5;
+$light-bg-b: #c2dde4;
+$dark-bg-a: #7462B6;
+$dark-bg-b: #3600B6;
+$light: #d3d3d3;
+$contrast: green;
+$white: snow;
+
+body>h1:first-child,
+section>h2:first-child,
+nav>h2:first-child,
+section>h1:first-child,
+footer>h2:first-child {
+  display:none;
+}
+
+body {
+  padding: 0;
+  background-color: $light-bg-a;
+  font-size: 100%;
+}
+
+main {
+  width: 100%;
+  max-width: 1000px;
+  background-color: $light-bg-b;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1000px) {
+    border-left: solid 1px $dark-bg-b;
+    border-right: solid 1px $dark-bg-b;
+    box-shadow: 2px 0px 5px #999;
+  }
+}
+
+header {
+
+  section#related {
+    ul:first-of-type {
+      text-align: center;
+      margin: 0;
+      list-style-type: none;
+    }
+
+    ul>li>a {
+      display: block;
+      padding: 1em 0;
+
+      @media screen and (min-width: 640px) {
+        padding: .25em 0;
+      }
+
+    }
+  }
+
+  div.logo {
+    border-top: solid 1px $dark-bg-a;
+    border-bottom: solid 1px $dark-bg-a;
+    font-family: $font-logo;
+    font-size: 3em;
+    color: $dark-bg-b;
+    text-shadow: 2px 2px $light;
+    background-color: $white;
+
+    img {
+      width: 1em;
+    }
+
+  }
+
+  div.img-get-some {
+
+    position: relative;
+
+    img {
+      position: relative;
+      top: -3px;
+      padding: 0;
+    }
+
+  }
+
+}
+
+nav {
+
+  position: relative;
+  top: -3px;
+
+  div {
+    text-align: center;
+    background-color: $dark-bg-b;
+
+    &:hover {
+      background-color: yellow;
+    }
+
+    a {
+      font-size: 2em;
+      color: $white;
+      padding: .25em;
+
+      &:hover {
+        color: $dark-bg-b;
+      }
+
+    }
+
+  }
+
+}
+
+section#calendar {
+  background-color: $white;
+  position: relative;
+  top: -3px;
+
+  section {
+    margin: 2em 0;
+    h1 {
+      font-size: 1.5em;
+      margin: 0;
+
+    }
+    p {
+      font-size: 1em;
+    }
+    a {
+      padding: 0;
+
+      img {
+        width: 100%;
+      }
+
+      @media screen and (min-width: 1025px) {
+        width: 50%;
+      }
+
+    }
+  }
+}
+
+section#quotes {
+  background-color: $dark-bg-a;
+  position: relative;
+  top: -3px;
+
+  blockquote {
+    color: $white;
+    margin: 1em 0;
+    cite {
+      color: yellow;
+    }
+  }
+
+
+}
+
+footer {
+  text-align: center;
+  font-size: .2em;
+}

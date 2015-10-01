@@ -1,0 +1,128 @@
+@import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
+body > h1:first-child,
+section > h2:first-child,
+nav > h2:first-child,
+section > h1:first-child,
+footer > h2:first-child {
+    display: none;
+}
+
+body {
+    padding: 0;
+    background-color: #f1f7f5;
+    font-size: 100%;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #c2dde4;
+    margin: 0 auto;
+}
+@media screen and (min-width: 1000px) {
+    main {
+        border-left: solid 1px #3600b6;
+        border-right: solid 1px #3600b6;
+        box-shadow: 2px 0px 5px #999;
+    }
+}
+
+header section#related ul:first-of-type {
+    text-align: center;
+    margin: 0;
+    list-style-type: none;
+}
+header section#related ul > li > a {
+    display: block;
+    padding: 1em 0;
+}
+@media screen and (min-width: 640px) {
+    header section#related ul > li > a {
+        padding: .25em 0;
+    }
+}
+header div.logo {
+    border-top: solid 1px #7462b6;
+    border-bottom: solid 1px #7462b6;
+    font-family: "Architects Daughter", cursive, sans-serif;
+    font-size: 3em;
+    color: #3600b6;
+    text-shadow: 2px 2px lightgray;
+    background-color: snow;
+}
+header div.logo img {
+    width: 1em;
+}
+header div.img-get-some {
+    position: relative;
+}
+header div.img-get-some img {
+    position: relative;
+    top: -3px;
+    padding: 0;
+}
+
+nav {
+    position: relative;
+    top: -3px;
+}
+nav div {
+    text-align: center;
+    background-color: #3600b6;
+}
+nav div:hover {
+    background-color: yellow;
+}
+nav div a {
+    font-size: 2em;
+    color: snow;
+    padding: .25em;
+}
+nav div a:hover {
+    color: #3600b6;
+}
+
+section#calendar {
+    background-color: snow;
+    position: relative;
+    top: -3px;
+}
+section#calendar section {
+    margin: 2em 0;
+}
+section#calendar section h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+section#calendar section p {
+    font-size: 1em;
+}
+section#calendar section a {
+    padding: 0;
+}
+section#calendar section a img {
+    width: 100%;
+}
+@media screen and (min-width: 1025px) {
+    section#calendar section a {
+        width: 50%;
+    }
+}
+
+section#quotes {
+    background-color: #7462b6;
+    position: relative;
+    top: -3px;
+}
+section#quotes blockquote {
+    color: snow;
+    margin: 1em 0;
+}
+section#quotes blockquote cite {
+    color: yellow;
+}
+
+footer {
+    text-align: center;
+    font-size: .2em;
+}
