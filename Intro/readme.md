@@ -31,21 +31,8 @@ What it can do
 Source
 ------
 * [Source on GitHub](https://github.com/joyent/node)
-* Version 1 will be released when there aren't any more breaking changes
-* Even versions are production, odd versions are development
 
-Installing Node
----------------
-The easiest way to install node is to [download and run the installer](http://nodejs.org) on the homepage.
-Walk through the wizard and install. Make sure you run the installer as an Administrator or use
-"Super User Do" or __sudo__.  You can also [download](nodejs.org/download/) individual installers on this page.
-Finally you can [download](nodejs.org/dist/v0.10.26/node-v0.10.26.tar.gz) the node js source and install and run
-it directly from the source.
 
-__Node runs on___
-* Windows
-* OSX
-* Linux
 
 REPL
 ====
