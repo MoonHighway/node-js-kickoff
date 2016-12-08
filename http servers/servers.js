@@ -74,13 +74,13 @@ http.createServer(function (req, res) {
  */
 http.createServer(function (req, res) {
 
-    fs.readFile('./img/leroy-brown.jpg', function (err, data) {
+    fs.readFile('./img/pilot.png', function (err, data) {
 
         if (err) {
             throw err;
         }
 
-        res.writeHead(200, {'Content-Type': 'image/jpeg'});
+        res.writeHead(200, {'Content-Type': 'image/png'});
         res.end(data);
 
     });
