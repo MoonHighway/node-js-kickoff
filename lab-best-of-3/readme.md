@@ -6,7 +6,7 @@ should display the results as well as the winner.
 Requirements
 -------------
 1. The coin flip function must return "heads" or "tails" 50/50 chance
-2. The coin flip function must be located in a seperate module
+2. The coin flip function must be located in a separate module
 3. Running __bestof.js__ consumes the __./lib/coinflip.js__ module
 4. First : Invoke coin flip three times and display the results
 5. Next  : Allow user to send 3, 5, 7, or any odd number as an argument when starting the __bestof.js__ module
